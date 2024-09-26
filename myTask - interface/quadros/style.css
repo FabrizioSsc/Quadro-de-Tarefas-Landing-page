@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    width:100%;
+    height:100%;
+    background-color:#361374;
+    font-family: "Orbitron";
+}
+
+/*principal*/
+.collumn-container {
+    width: 357px; min-width:357px; height:495px; background-color:#4f2991; color:white; 
+    margin:0px 20px 20px 20px; border-radius:7px; padding:10px; box-sizing: border-box;
+    border: 1px solid rgb(33, 0, 41);
+}
+.top-container {
+    display:flex; align-items: center; margin-top: 15px;
+
+    .title {
+        flex:1; text-align: center; font-size:24px;
+    }
+    .remove-card {
+        margin-right:5px;
+    }
+}
+.tasks-container {
+    margin-top: 12px; height: 85%; overflow: auto; overflow-x: hidden; scrollbar-color: #4f2991 #361374; 
+    scrollbar-width: thin; border-radius: 7px; 
+}
+
+.focus {
+    background-color:#0000004f;
+    border:solid 1px white;
+}
+
+/*button*/
+.container-button {
+    width:40px; height:40px; 
+    /*
+    background-color: #361374;
+    border-radius: 7px;
+    */
+}
+
+.container-button:hover {
+    cursor:pointer;
+    
+    span {
+        box-shadow: 0px 0px 3px black;
+        font-size: 34px;
+    }
+}
+
+.container-button span {
+    position:relative; top:50%; left:50%; transform: translate(-50%, -50%); font-size:30px; 
+    background-color: #361374;
+    border-radius: 7px;
+    transition: box-shadow 0.05s ease;
+    transition: font-size 0.1s ease;
+    user-select: none;
+}
+
+
+/*tasks*/
+.task {
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+
+    height: max-content;
+    margin: 3px 3px 5px 3px;
+    border-radius: 5px;
+
+    .task-description {
+        padding: 8px;  
+        font-weight: bold;     
+    }
+}
+
+.task-description:focus {
+    outline:auto;
+}
+
