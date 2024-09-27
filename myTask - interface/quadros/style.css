@@ -16,7 +16,7 @@ html, body {
 .collumn-container {
     width: 357px; min-width:357px; height:495px; background-color:#4f2991; color:white; 
     margin:0px 20px 20px 20px; border-radius:7px; padding:10px; box-sizing: border-box;
-    border: 1px solid rgb(33, 0, 41);
+    border: 1px solid rgb(33, 0, 41); 
 }
 .top-container {
     display:flex; align-items: center; margin-top: 15px;

@@ -2,37 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="myTask - interface/imgs/logo.png" type="image/x-icon">
     <title>My Task</title>
+    <link rel="shortcut icon" href="myTask - interface/imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <header>
-     
-        <nav id="log">
-            <img id="logo" src="myTask - interface/imgs/logo.png" alt="">
-            <h1 class="title">yTask</h1>
-          
-         
-        </nav>
-        <div class="box-btn-actions">
-            <button class="btn-action" onclick="window.location.href='myTask - interface/cadastro/index.html'">Cadastrar</button>
-            <button class="btn-action" onclick="window.location.href='myTask - interface/login/index.html'">Entrar</button>
-        </div>
-    </header>
-
-    <main>
-        <section class="first-section">
-            <div>
-                <h1>Organize suas tarefas com <br> <strong>Facilidade</strong></h1>
-                <h2>Crie quadros de tarefas personalizados para gerenciar suas atividades diárias de forma eficiente.</h2>
-         <button class="btn-action link-action"   onclick="window.location.href= 'myTask - interface/quadros/index.html'"  >Criar Quadros</button>
-            </div>
-            <div class="box-img-main">
-                <img class="img-profile" src="myTask - interface/imgs/imagem.png" >
+    <div id="primary-container" style="max-width: 1980px; margin:auto; ">
+        <section id="top-container" style="width:100%; padding-block:30px; background: linear-gradient(45deg, #4f2991 0%, #5b5dd7 ); display:flex; align-items:center; justify-content:space-around; flex-wrap: wrap;">
+            <div id="title" style="font-size:64px; margin-bottom:20px;">MyTask</div>
+            <div id="buttons" style="text-align:center">
+                <button class="btn-header" onclick="window.location.href='myTask - interface/cadastro/index.html'">Cadastrar</button>
+                <button class="btn-header" onclick="window.location.href='myTask - interface/login/index.html'">Entrar</button>
             </div>
         </section>
+        <section id="home">
+            <div id="title-home">Organize suas tarefas com <span style="color:#854fe2;">Facilidade</span></div>
+            <br>
+            <div id="description-home" >Crie quadros de tarefas personalizados para gerenciar suas atividades diárias de forma eficiente.</div>
+            <br>
+            <button class="btn-header" style="margin:0px;" onclick="window.location.href= 'myTask - interface/quadros/index.html'">Criar quadros</button>
+            <div id="img-home" style="width:100%; text-align:center; margin-top:40px">
+                <img src="myTask - interface/imgs/imagem.png" alt="" style="width:50%;  min-width:350px; ">
+            </div>
+        </section>
+        <br>
+    </div>
 </body>
 </html>
